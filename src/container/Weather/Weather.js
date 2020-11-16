@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import CurrentDay from '../../components/CurrentDay/CurrentDay';
+import BarChart from '../UI/BarChart/BarChart';
 
 import axios from 'axios';
 import './Weather.css';
 
 class Weather extends Component {
     state = {
-        data: {}
+        data: {},
+        barChartData: []
     }
 
     componentDidMount() {
@@ -18,9 +20,22 @@ class Weather extends Component {
     render() {
         console.log(this.state.data);
         return (
-            <div className="row col-sm-12 full-height">
+            <div className="row col-sm-12">
                 <div className="col-sm-4"><CurrentDay weather={this.state.data} /></div>
-                <div className="col-sm-7">sdbfkjsdn</div>
+                <div className="col-sm-8">
+                    <div className="row">
+                        <div className="card full-width margin-top-10 margin-bottom-10">
+                            <div className="card-body ">
+                                <BarChart />
+                            </div>
+                        </div>
+                        <div className="card full-width margin-top-10 margin-bottom-10 fixed-height">
+                            <div className="card-body">
+                                <BarChart />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

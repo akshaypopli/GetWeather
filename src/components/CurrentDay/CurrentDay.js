@@ -7,7 +7,7 @@ const CurrentDay = (props) => {
         <div className="CurrentDay">
             {/* search */}
             <div className="bg-weather">
-                <h1>{JSON.stringify(props.weather.main.temp)}</h1>
+                {/* <h1>{JSON.stringify(props.weather.main.temp)}</h1> */}
                 <div className="col-sm-12">
                     <h4 className="col-sm-6">
                         {JSON.stringify(props.weather.name)}
@@ -18,7 +18,7 @@ const CurrentDay = (props) => {
                 </div>
                 <div className="col-sm-12">
                     <div className="col-sm-6">
-                        Feels Like {JSON.stringify(props.weather.main.feels_like)}
+                        {/* Feels Like {JSON.stringify(props.weather.main.feels_like)} */}
                     </div>
                     <div className="col-sm-6">
                     
