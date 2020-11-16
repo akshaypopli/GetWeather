@@ -1,0 +1,12 @@
+/* http://api.openweathermap.org/data/2.5/weather?q=Delhi,ind&APPID=abe2d83043cd4dffa9843b8134ca88d0 */
+
+.CurrentDay {
+    padding: 10px;
+}
+
+.bg-weather {
+    background: url(../../assets/images/clearSkyNight.jpg) no-repeat;
+    height: 97vh;
+    
+    margin: auto;
+}
